@@ -54,7 +54,7 @@ document.querySelector('#button5').onclick=function(){
     console.log(soDonVi);
     console.log(soHangChuc)
     let tong = soDonVi + soHangChuc
-    if(haiChuSo>=100){
+    if(haiChuSo>=100 && haiChuSo<10){
         document.querySelector('#result5').classList.add('text-danger')
         document.querySelector('#result5').classList.remove('text-success')
         document.querySelector('#result5').value='Xin nhập số 2 chữ số'
