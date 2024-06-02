@@ -1,0 +1,21 @@
+/* case1 */
+button.nav-link {
+  color: green !important;
+}
+
+button.nav-link.active {
+  background-color: green !important;
+  color: white !important;
+}
+.case_1_content select {
+  font-size: 1rem;
+}
+.case_result {
+  visibility: hidden;
+}
+.case_result > textarea {
+  resize: none;
+}
+.case_result.show {
+  visibility: visible;
+}
