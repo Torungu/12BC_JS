@@ -52,7 +52,7 @@ document.querySelector('#button5').onclick=function(){
     let soDonVi=haiChuSo%10
     let soHangChuc=Math.floor(haiChuSo/10)
     console.log(soDonVi);
-    console.log(soHangChuc)
+    console.log(soHangChuc)``
     let tong = soDonVi + soHangChuc
     if(haiChuSo>=100 || haiChuSo<10){
         document.querySelector('#result5').classList.add('text-danger')
