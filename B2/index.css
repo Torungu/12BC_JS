@@ -1,4 +1,9 @@
-/* case1 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 button.nav-link {
   color: green !important;
 }
@@ -7,15 +12,26 @@ button.nav-link.active {
   background-color: green !important;
   color: white !important;
 }
-.case_1_content select {
+.case_1_content select,
+.case_4_content select {
   font-size: 1rem;
 }
-.case_result {
+.case1_result,
+.case2_result,
+.case3_result,
+.case4_result,
+.case_4_content #renderKenh {
   visibility: hidden;
 }
-.case_result > textarea {
+.case1_result > textarea,
+.case2_result > textarea,
+.case3_result > textarea,
+.case4_result > textarea {
   resize: none;
 }
-.case_result.show {
+.case1_result.show,
+.case2_result.show,
+.case3_result.show,
+.case4_result.show {
   visibility: visible;
 }

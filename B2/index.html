@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>JavaScript 1</title>
+    <title>JavaScript 2</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -176,9 +176,9 @@
               >
                 Xuất Kết Quả
               </button>
-              <div class="case_result my-2 text-center">
+              <div class="case1_result my-2 text-center">
                 <textarea
-                  class="bg-success-subtle rounded-1 text-center border border-0 fw-bold w-50 text-success"
+                  class="bg-success-subtle rounded-1 text-center border border-0 fw-bold w-50"
                   id="result1"
                   disabled
                 >
@@ -228,9 +228,9 @@
                   </button>
                 </div>
               </div>
-              <div class="case_result my-2 text-center">
+              <div class="case2_result my-2 text-center">
                 <textarea
-                  class="bg-success-subtle rounded-1 text-center border border-0 fw-bold w-50 text-success"
+                  class="bg-success-subtle rounded-1 text-center border border-0 fw-bold w-75 text-success"
                   id="result2"
                   disabled
                 >
@@ -246,37 +246,64 @@
             tabindex="0"
           >
             <div class="case_3 px-5 py-3">
-              <h2>Quy đổi tiền</h2>
-              <div class="case_3_content w-50">
-                <p>
-                  <span class="text-danger fw-bold">1 USD</span> =>
-                  <span class="text-success fw-bold">23.500 VND</span>
-                </p>
-                <div class="input-group mb-3 w-50">
+              <h2 class="text-center fw-bold">Tính tiền thuế</h2>
+              <div class="case_3_content">
+                <div class="input-group mb-3 w-50 row">
+                  <label for="" class="form-label px-0"
+                    >Tên người chịu thuế</label
+                  >
                   <input
                     type="text"
-                    class="form-control text-danger fw-bold"
-                    placeholder="USD"
+                    class="form-control"
+                    placeholder="Họ và Tên"
                     aria-label="Example text with button addon"
                     aria-describedby="button-addon1"
-                    id="usd"
+                    id="nguoiChiuThue"
                   />
+                </div>
+                <div class="row">
+                  <div class="input-group mb-3 w-50 row col-8">
+                    <label for="" class="form-label px-0">Thu nhập 1 năm</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="VND"
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                      id="thuNhap"
+                    />
+                  </div>
+                  <div class="input-group mb-3 w-25 row col-3 ms-2">
+                    <label for="" class="form-label px-0"
+                      >Số người phụ thuộc</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      placeholder="Người"
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                      id="nguoiPhuThuoc"
+                    />
+                  </div>
+                </div>
+                <div class="input-group mb-3 w-25 row">
                   <button
-                    class="btn btn-outline-secondary bg-primary text-white"
-                    type="Tính"
+                    class="btn btn-outline-secondary bg-success text-white"
+                    type=""
                     id="button3"
                   >
-                    Exchange
+                    Tính Thuế
                   </button>
                 </div>
               </div>
-              <div class="case_result my-2 w-25">
-                <input
-                  class="bg-info rounded-1 text-center border border-0 text-success fw-bold w-75"
-                  placeholder="VND"
+              <div class="case3_result my-2 text-center">
+                <textarea
+                  class="bg-success-subtle rounded-1 text-center border border-0 fw-bold w-75"
                   id="result3"
                   disabled
-                />
+                >
+                </textarea>
               </div>
             </div>
           </div>
@@ -288,41 +315,77 @@
             tabindex="0"
           >
             <div class="case_4 px-5 py-3">
-              <h2>Chu vi và Diện tích hình chữ nhật</h2>
+              <h2 class="fw-bold text-center">Tính tiền cáp</h2>
               <div class="case_4_content w-50">
-                <div class="input-group mb-3">
+                <div class="mb-3">
+                  <label for="" class="form-label">Tệp Khách Hàng</label>
+                  <select
+                    class="form-select form-select-lg"
+                    name=""
+                    id="tepKhach"
+                    onchange="displayKenh()"
+                  >
+                    <option selected value="none">X</option>
+                    <option value="nhaDan">Nhà dân</option>
+                    <option value="doanhNghiep">Doanh nghiệp</option>
+                  </select>
+                </div>
+                <div class="input-group mb-3 row">
+                  <label for="" class="form-label">Mã Khách Hàng</label>
                   <input
                     type="text"
-                    class="form-control"
-                    placeholder="Cạnh a"
+                    class="form-control ms-3"
+                    placeholder="Mã số khách"
                     aria-label="Example text with button addon"
                     aria-describedby="button-addon1"
-                    id="canhA"
+                    id="maKhach"
                   />
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Cạnh b"
-                    aria-label="Example text with button addon"
-                    aria-describedby="button-addon1"
-                    id="canhB"
-                  />
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="input-group mb-3 row">
+                      <label for="" class="form-label">Số kênh cao cấp</label>
+                      <input
+                        type="number"
+                        class="form-control ms-3"
+                        placeholder="Số kênh"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                        id="kenhCaoCap"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="input-group mb-3 row" id="renderKenh">
+                      <label for="" class="form-label">Số kênh cơ bản</label>
+                      <input
+                        type="number"
+                        class="form-control ms-3"
+                        placeholder="Số kênh"
+                        aria-label="Example text with button addon"
+                        aria-describedby="button-addon1"
+                        id="kenhCoBan"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group mb-3 row">
                   <button
-                    class="btn btn-outline-secondary bg-primary text-white"
-                    type="Tính"
+                    class="btn btn-outline-secondary bg-success text-white ms-3 w-50"
+                    type=""
                     id="button4"
                   >
-                    Tính
+                    Tính Tiền Cáp
                   </button>
                 </div>
               </div>
-              <div class="case_result my-2 w-75">
-                <input
-                  class="bg-info rounded-1 text-center border border-0 text-success fw-bold w-75"
-                  placeholder="Chu vi và Diện tích"
+              <div class="case4_result my-2 text-center">
+                <textarea
+                  class="bg-success-subtle rounded-1 text-center border border-0 fw-bold w-75"
                   id="result4"
                   disabled
-                />
+                >
+                </textarea>
               </div>
             </div>
           </div>
