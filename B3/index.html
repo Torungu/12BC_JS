@@ -52,63 +52,151 @@
           disabled
         />
       </div>
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#case1"
-            type="button"
-            role="tab"
-            aria-controls="pills-home"
-            aria-selected="true"
-          >
-            CASE 1
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#case2"
-            type="button"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-          >
-            CASE 2
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#case3"
-            type="button"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-          >
-            CASE 3
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#case4"
-            type="button"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-          >
-            CASE 4
-          </button>
-        </li>
+      <ul class="nav nav-pills mb-3 row" id="pills-tab" role="tablist">
+        <div class="col-12 d-flex">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case1"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true"
+            >
+              CASE 1
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case2"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 2
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case3"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 3
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case4"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 4
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case5"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 5
+            </button>
+          </li>
+        </div>
+        <div class="col-12 d-flex">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case6"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 6
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case7"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 7
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case8"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 8
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case9"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 9
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#case10"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false"
+            >
+              CASE 10
+            </button>
+          </li>
+        </div>
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <div
@@ -188,6 +276,169 @@
             class="form-control text-success-emphasis fw-bold w-25"
             name=""
             id="result4"
+            aria-describedby="helpId"
+            placeholder=""
+            disabled
+          />
+        </div>
+        <div
+          class="tab-pane fade bg-light p-3 w-50 rounded-2"
+          id="case5"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <h4 class="fw-bold text-success-emphasis mb-3">
+            Tìm số chẵn cuối cùng
+          </h4>
+          <button class="btn btn-success mb-3" id="button5">Tìm</button>
+          <input
+            type="text"
+            class="form-control text-success-emphasis fw-bold w-25"
+            name=""
+            id="result5"
+            aria-describedby="helpId"
+            placeholder=""
+            disabled
+          />
+        </div>
+        <div
+          class="tab-pane fade bg-light p-3 w-50 rounded-2"
+          id="case6"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <h4 class="fw-bold text-success-emphasis mb-3">
+            Đổi chỗ 2 giá trị trong mảng
+          </h4>
+          <div class="mb-3">
+            <label for="" class="form-label"
+              >Nhập 2 vị trí index muốn đổi</label
+            >
+            <div class="d-flex w-50">
+              <input
+                type="number"
+                class="form-control"
+                name=""
+                id="viTri1"
+                aria-describedby="helpId"
+                placeholder="Vị trí 1"
+              />
+              <input
+                type="number"
+                class="form-control"
+                name=""
+                id="viTri2"
+                aria-describedby="helpId"
+                placeholder="Vị trí 2"
+              />
+            </div>
+          </div>
+          <button class="btn btn-success mb-3" id="button6">Đổi</button>
+          <input
+            type="text"
+            class="form-control text-success-emphasis fw-bold"
+            name=""
+            id="result6"
+            aria-describedby="helpId"
+            placeholder=""
+            disabled
+          />
+        </div>
+        <div
+          class="tab-pane fade bg-light p-3 w-50 rounded-2"
+          id="case7"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <h4 class="fw-bold text-success-emphasis mb-3">Sắp xếp tăng dần</h4>
+          <button class="btn btn-success mb-3" id="button7">Sắp Xếp</button>
+          <input
+            type="text"
+            class="form-control text-success-emphasis fw-bold"
+            name=""
+            id="result7"
+            aria-describedby="helpId"
+            placeholder=""
+            disabled
+          />
+        </div>
+        <div
+          class="tab-pane fade bg-light p-3 w-50 rounded-2"
+          id="case8"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <h4 class="fw-bold text-success-emphasis mb-3">
+            Tìm số nguyên tố đầu tiên
+          </h4>
+          <button class="btn btn-success mb-3" id="button8">Tìm</button>
+          <input
+            type="text"
+            class="form-control text-success-emphasis fw-bold w-25"
+            name=""
+            id="result8"
+            aria-describedby="helpId"
+            placeholder=""
+            disabled
+          />
+        </div>
+        <div
+          class="tab-pane fade bg-light p-3 w-50 rounded-2"
+          id="case9"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <h4 class="fw-bold text-success-emphasis mb-3">
+            Tìm có bao nhiêu số nguyên trong mảng có số thực
+          </h4>
+          <div class="mb-3">
+            <label for="" class="form-label">Nhập thêm số thực vô mảng</label>
+            <div class="d-flex w-50">
+              <input
+                type="text"
+                class="form-control"
+                name=""
+                id="soThuc"
+                aria-describedby="helpId"
+                placeholder="Thêm số thực"
+              />
+              <button class="btn btn-success mx-2 text-white" id="buttonAdd1">
+                Add
+              </button>
+            </div>
+          </div>
+          <button class="btn btn-success mb-3" id="button9">Tìm</button>
+          <input
+            type="text"
+            class="form-control text-success-emphasis fw-bold w-50"
+            name=""
+            id="result9"
+            aria-describedby="helpId"
+            placeholder=""
+            disabled
+          />
+        </div>
+        <div
+          class="tab-pane fade bg-light p-3 w-50 rounded-2"
+          id="case10"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+          tabindex="0"
+        >
+          <h4 class="fw-bold text-success-emphasis mb-3">
+            So số lượng số âm với số dương
+          </h4>
+          <button class="btn btn-success mb-3" id="button10">So Sánh</button>
+          <input
+            type="text"
+            class="form-control text-success-emphasis fw-bold"
+            name=""
+            id="result10"
             aria-describedby="helpId"
             placeholder=""
             disabled
