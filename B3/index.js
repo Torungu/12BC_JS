@@ -187,7 +187,6 @@ document.querySelector('#button10').onclick=()=>{
                 b++
             }
         }
-        console.log(a,b)
         if(a==0 && b>0){
             result='Không có Số dương trong mảng'
         }
