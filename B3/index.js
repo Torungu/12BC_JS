@@ -145,9 +145,11 @@ document.querySelector('#button8').onclick=()=>{
     if(arrSo){
         let result=-1
         for(i of arrSo){
-            if(isPrimeNumber(i)){
-                result=i
-                break
+            if(Number.isInteger(i)){
+                if(isPrimeNumber(i)){
+                    result=i
+                    break
+                }
             }
         }
         document.querySelector('#result8').value=result
